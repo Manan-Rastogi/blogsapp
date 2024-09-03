@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Protected = ({ children, authentication = true }) => {
@@ -19,7 +20,7 @@ const Protected = ({ children, authentication = true }) => {
   }, [authentication, authStatus, navigate]);
 
   /////////////////////////////////////// TODO 1: Add A Loader
-  return loader ? none : <>{children}</>;
+  return loader ? null : <>{children}</>;
 };
 
 export default Protected;
