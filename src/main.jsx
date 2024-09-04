@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/edit-post",
+        path: "/edit-post/:slug",
         element: (
           <Protected>
             <EditPost />
