@@ -42,7 +42,7 @@ export class Service {
     }
   }
 
-  async postBlog(data) {
+  async createBlog(data) {
     try {
       return await this.databases.createDocument(
         config.appwriteDatabaseId,
